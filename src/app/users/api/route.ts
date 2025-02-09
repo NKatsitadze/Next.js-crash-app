@@ -6,6 +6,7 @@ export const users = [
 export async function GET() {
     return Response.json(users)
 }
+
 export async function POST(request: Request) {
     const reqBody = await request.json()
     const newUser = {id: users.length + 1, name: reqBody.name}

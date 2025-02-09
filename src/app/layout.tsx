@@ -23,7 +23,7 @@ export default function RootLayout({
         <header className="bg-slate-900 text-white p-4 text-center">
           <Navigation />
         </header>
-        <div className="flex-1">
+        <div className="flex-1 overflow-auto">
           {children}
         </div>
         <footer className="bg-slate-900 text-white p-4 text-center">
