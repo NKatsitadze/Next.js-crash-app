@@ -1,5 +1,3 @@
-export default async function Product({ params }: { params: { id: string } }) {
-    const { id } = params
-
-    return <h5>{id}</h5>
+export default function Product({ params }: any) {
+    return <h5>{params.id}</h5>;
 }
