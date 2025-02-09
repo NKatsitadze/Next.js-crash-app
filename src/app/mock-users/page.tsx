@@ -13,7 +13,7 @@ export default async function MockUsers() {
         "use server"
         const name = formData.get("name")
 
-        const res = await fetch(
+        await fetch(
             "https://67a5a9e6c0ac39787a1ef943.mockapi.io/users"
         , {
             method: "POST",
