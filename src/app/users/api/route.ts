@@ -1,7 +1,4 @@
-export const users = [
-    {id:1, name: "John"},
-    {id:2, name: "Bob"}
-]
+import users from "@/usersMock"
 
 export async function GET() {
     return Response.json(users)
